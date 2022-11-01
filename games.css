@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./Images/bg2.png);
+    background-position: center;
+    /* background-size: 100% auto; */
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+body * {
+    font-family: 'Silkscreen', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header {
+    padding-top: 32px;
+    /* height: calc(120px + 32px); */
+}
+
+header div {
+    width: 150px;
+    margin: auto;
+    padding: 3px;
+    padding-bottom: 0px;
+    background-image: linear-gradient(90deg, rgb(0, 17, 255) 0%, rgb(0, 255, 247) 100%);
+    border-radius: 8px;
+    display: flex;
+    transition: transform.3s;
+
+
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, rgb(0, 17, 255) 0%, rgb(0, 255, 247) 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: rgb(61, 75, 89);
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 10px;
+}
+
+section p {
+    color: rgb(159, 212, 241)
+}
+
+section ul {
+    text-align: center;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.gameslist img {
+    width: 90px;
+    border-radius: 8px;
+
+}
+
+.channellist img {
+    border-radius: 50%;
+    width: 70px;
+
+}
+
+.sociallist img {
+    max-width: 30px;
+
+}
+
+header div {
+    animation: up .7s .0s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: .2s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+@keyframes up {
+    From {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom {
+    From {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
