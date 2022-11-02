@@ -4,7 +4,7 @@
 
  My First Web Project
 
- [Click here] (https://roghorvat.github.io/MyGamesWeb/)
+ [Click here](https://roghorvat.github.io/MyGamesWeb/)
 
  ## Tecnologies
 
