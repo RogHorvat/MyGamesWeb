@@ -1,6 +1,6 @@
 # My Games Web
 
-![preview](./.github/images/Template.png)
+![preview](./images/Template.png)
 
  My First Web Project
 
